@@ -25,7 +25,7 @@ function generateMarkdown(data) {
 
 	## License
 
-	${data.license}
+	![badmath](https://img.shields.io/badge/license-${data.license}-blue)
 
 	## Contributing
 
