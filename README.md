@@ -8,25 +8,10 @@ This project prompts the user for input on their project and dynamically generat
 
 ## Table of Contents
 
-* [Template](#template)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
-
-## Template
-
-* Project Title
-* Description
-* Table of Contents
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* User Information
-  * User GitHub profile picture
-  * User GitHub email
 
 ## Installation
 
