@@ -1,10 +1,10 @@
 # Unit 09 Node.js and ES6+ Homework: Good README Generator
 
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+![language](https://img.shields.io/badge/javascript-100%25-blue)
 
 ## Description
 
-This project prompts the user for input on their project and dynamically generates a README.md file based on the given data. The README.md file is populated with Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and User Information sections. The application utilises the GitHub API to retrieve the user's email and profile picture for the User Information section. The generated README.md is then free to be used at the user's discretion while providing a consistent structure and a professional look. This application allows users to spend more time working on their project and less time worrying about constructing a good README.md.
+This project prompts the user for input on their project and dynamically generates a README file called Example.md based on the given data. The Example.md file is populated with Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and User Information sections. The application utilises the GitHub API to retrieve the user's email and profile picture for the User Information section. The generated file is then free to be used at the user's discretion while providing a consistent structure and a professional look. This application allows users to spend more time working on their project and less time worrying about constructing a good README.
 
 ## Table of Contents
 
@@ -35,7 +35,7 @@ node index.js
 
 ## License
 
-![license](https://img.shields.io/badge/license-MIT-blue)
+![license](https://img.shields.io/badge/license-MIT-green)
 
 MIT License
 
