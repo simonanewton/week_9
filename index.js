@@ -9,7 +9,7 @@ const questions = [
 		type: "input",
 		message: "Enter your GitHub username:",
 		name: "username",
-		default: "simonanewton"
+		validate: (response) => response.length === 0 ? console.log("Please enter a GitHub username.") : true
 	},
 	{
 		type: "input",
@@ -66,9 +66,7 @@ async function init() {
 		const userInput = await inquirer.prompt(questions);
 		const userInfo = await api.getUser(userInput.username);
 
-		console.log(userInfo);
-
-        const markdown = generateMarkdown(userInput, userInfo);
+        const markdown = generateMarkdown(userInput, userInfo.data);
 
         writeToFile("example.md", markdown);
     }

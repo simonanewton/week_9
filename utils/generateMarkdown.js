@@ -1,10 +1,10 @@
-function generateMarkdown(data) {
+function generateMarkdown(userInput, userInfo) {
 	return `
-	# ${data.title}
+	# ${userInput.title}
 
 	## Description
 
-	${data.description}
+	${userInput.description}
 
 	## Table of Contents
 
@@ -17,26 +17,31 @@ function generateMarkdown(data) {
 
 	## Installation
 
-	${data.installation}
+	${userInput.installation}
 
 	## Usage
 
-	${data.usage}
+	${userInput.usage}
 
 	## License
 
-	![badmath](https://img.shields.io/badge/license-${data.license}-blue)
+	![userLicense](https://img.shields.io/badge/license-${(userInput.license).replace(/ /g,"_")}-blue)
 
 	## Contributing
 
-	${data.contributing}
+	${userInput.contributing}
 
 	## Tests
 
-	${data.tests}
+	${userInput.tests}
 
 	## User Information
-	GitHub Username: @${data.username}
+
+	![userImage](${userInfo.avatar_url})
+
+	GitHub Username: [@${userInfo.login}](${userInfo.url})
+
+	GitHub Email Address: [${userInfo.email}](mailto:${userInfo.email})
 	`;
 }
 
