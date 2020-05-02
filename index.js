@@ -1,6 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 
+const api = require("./utils/api.js");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
 const questions = [
@@ -62,9 +63,12 @@ function writeToFile(fileName, data) {
 
 async function init() {
     try {
-        const userInput = await inquirer.prompt(questions);
+		const userInput = await inquirer.prompt(questions);
+		const userInfo = await api.getUser(userInput.username);
 
-        const markdown = generateMarkdown(userInput);
+		console.log(userInfo);
+
+        const markdown = generateMarkdown(userInput, userInfo);
 
         writeToFile("example.md", markdown);
     }

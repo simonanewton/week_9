@@ -29,7 +29,9 @@ node index.js
 
 ## Credits
 
+* https://guides.github.com/features/mastering-markdown/
 * https://choosealicense.com/licenses/
+* https://developer.github.com/v3/users/#get-a-single-user
 
 ## License
 
