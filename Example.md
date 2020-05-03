@@ -11,7 +11,7 @@ Example Project Description
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
-* [Questions](#questions)
+* [Developer](#developer)
 
 ## Installation
 
@@ -33,7 +33,7 @@ Example Project Contributing
 
 Example Project Tests
 
-## Developer Information
+## Developer
 
 ![userImage](https://avatars1.githubusercontent.com/u/43375369?v=4)
 

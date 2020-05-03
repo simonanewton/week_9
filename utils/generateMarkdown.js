@@ -13,7 +13,7 @@ ${userInput.description}
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
-* [Questions](#questions)
+* [Developer](#developer)
 
 ## Installation
 
@@ -35,7 +35,7 @@ ${userInput.contributing}
 
 ${userInput.tests}
 
-## Developer Information
+## Developer
 
 ![userImage](${userInfo.avatar_url})
 
