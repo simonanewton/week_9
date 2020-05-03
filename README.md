@@ -4,7 +4,7 @@
 
 ## Description
 
-This project prompts the user for input on their project and dynamically generates a README file called Example.md based on the given data. The Example.md file is populated with Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and User Information sections. The application utilises the GitHub API to retrieve the user's email and profile picture for the User Information section. The generated file is then free to be used at the user's discretion while providing a consistent structure and a professional look. This application allows users to spend more time working on their project and less time worrying about constructing a good README.
+This project prompts the user for input on their project and dynamically generates a README file called Example.md based on the given data. The Example.md file is populated with Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Devloper Information sections. The application utilises the GitHub API to retrieve the user's email and profile picture for the Devloper Information section. The generated file is then free to be used at the user's discretion while providing a consistent structure and a professional look. This application allows users to spend more time working on their project and less time worrying about constructing a good README.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ This project prompts the user for input on their project and dynamically generat
 
 ## Installation
 
-Install the required npm packages with the following command:
+Install the required npm packages for this application with the following command:
 ```sh
 npm install
 ```

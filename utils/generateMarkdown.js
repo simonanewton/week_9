@@ -1,48 +1,48 @@
 function generateMarkdown(userInput, userInfo) {
-	return `
-	# ${userInput.title}
+	return (
+`# ${userInput.title}
 
-	## Description
+## Description
 
-	${userInput.description}
+${userInput.description}
 
-	## Table of Contents
+## Table of Contents
 
-	* [Installation](#installation)
-	* [Usage](#usage)
-	* [License](#license)
-	* [Contributing](#contributing)
-	* [Tests](#tests)
-	* [Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-	## Installation
+## Installation
 
-	${userInput.installation}
+${userInput.installation}
 
-	## Usage
+## Usage
 
-	${userInput.usage}
+${userInput.usage}
 
-	## License
+## License
 
-	![userLicense](https://img.shields.io/badge/license-${(userInput.license).replace(/ /g,"_")}-blue)
+![userLicense](https://img.shields.io/badge/license-${(userInput.license).replace(/ /g, "_")}-blue)
 
-	## Contributing
+## Contributing
 
-	${userInput.contributing}
+${userInput.contributing}
 
-	## Tests
+## Tests
 
-	${userInput.tests}
+${userInput.tests}
 
-	## User Information
+## Developer Information
 
-	![userImage](${userInfo.avatar_url})
+![userImage](${userInfo.avatar_url})
 
-	GitHub Username: [@${userInfo.login}](${userInfo.url})
+GitHub Username: [@${userInfo.login}](https://github.com/${userInfo.login})
 
-	GitHub Email Address: [${userInfo.email}](mailto:${userInfo.email})
-	`;
+GitHub Email Address: [${userInfo.email}](mailto:${userInfo.email})`
+	);
 }
 
 module.exports = generateMarkdown;

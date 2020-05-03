@@ -9,7 +9,7 @@ const questions = [
 		type: "input",
 		message: "Enter your GitHub username:",
 		name: "username",
-		validate: (response) => response.length === 0 ? console.log("Please enter a GitHub username.") : true
+		validate: (response) => response.length === 0 ? console.log("Please enter your GitHub username.") : true
 	},
 	{
 		type: "input",
@@ -57,7 +57,9 @@ const questions = [
 
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (error) => {
-        console.log(error ? error : "Success!");
+		if (error) throw error;
+
+		console.log("Success!");
     })
 }
 
@@ -68,7 +70,7 @@ async function init() {
 
         const markdown = generateMarkdown(userInput, userInfo.data);
 
-        writeToFile("example.md", markdown);
+        writeToFile("Example.md", markdown);
     }
     catch (error) {
         console.log(error);
